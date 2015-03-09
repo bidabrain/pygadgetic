@@ -7,5 +7,5 @@ setup(name='pygadgetic',
       author='Long DO CAO',
       author_email='ldocao@gmail.com',
       license='None',
-      packages=['pygadgetic'],
+      packages=['modules'],
       zip_safe=False)

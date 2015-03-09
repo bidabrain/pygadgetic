@@ -1,0 +1,9 @@
+setup.py
+modules/__init__.py
+modules/check.py
+modules/write.py
+pygadgetic.egg-info/PKG-INFO
+pygadgetic.egg-info/SOURCES.txt
+pygadgetic.egg-info/dependency_links.txt
+pygadgetic.egg-info/not-zip-safe
+pygadgetic.egg-info/top_level.txt
