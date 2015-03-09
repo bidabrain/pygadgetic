@@ -2,8 +2,8 @@ import numpy as np
 import os
 import sys
 import struct
-
-
+from modules.check import *
+from modules.write import write_header, write_body
 
 
 
@@ -11,7 +11,7 @@ import struct
 
 
 class Header:
-    """Structure of the header for initial condition file
+    r"""Structure of the header for initial condition file
 
     Parameters
     ----------
@@ -55,7 +55,7 @@ class Header:
 
 
 class Body:
-    """Structure of body for initial condition file
+    r"""Structure of body for initial condition file
 
     Parameters
     ----------
@@ -192,17 +192,20 @@ class Body:
 
 
 def dump_ic(header, body, destination_file="ic.dat", format_output=1):
-    """Generates output initial condition file for Gadget
+    r"""Generates output initial condition file for Gadget
 
 
     Parameters
     ----------
     header : object
         header for snapshot.
+
     body : object
         body of snapshot (POS,VEL,MASS, etc.)
+
     destination_file : string
         Full path of the output file name.
+
     format_output : integer
         Define output format as defined in Gadget-2. Only Binary 1 supported for now.
 

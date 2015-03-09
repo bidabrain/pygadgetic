@@ -14,12 +14,13 @@ total_number_of_particles=np.sum(npart) #total number of particles
 my_header=pygadgetic.Header()
 my_body=pygadgetic.Body(npart)
 
+
 ##fill in the header
 my_header.NumPart_ThisFile = np.array(npart)
 my_header.NumPart_Total = np.array(npart)
 
 
-##fill the body
+##fill the body with minimal information
 #position
 my_body.pos[0,:]=np.array([0,0,0]) #the first particle will be at the center
 my_body.pos[1,:]=np.array([1,1,1])
