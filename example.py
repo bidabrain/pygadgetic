@@ -1,7 +1,7 @@
 ### this is an example of how to generate an initial condition file
 
 import numpy as np
-from pygadgetic import *
+import pygadgetic
 
 
 
@@ -11,8 +11,8 @@ total_number_of_particles=np.sum(npart) #total number of particles
 
 
 ##create objects
-my_header=Header()
-my_body=Body(npart)
+my_header=pygadgetic.Header()
+my_body=pygadgetic.Body(npart)
 
 ##fill in the header
 my_header.NumPart_ThisFile = np.array(npart)
@@ -40,4 +40,4 @@ my_body.mass[:]=1. #all particles have the same mass =1 (gadget units)
 
 ##now writes the initial condition file
 my_name="./test_ic.dat"
-dump_ic(my_header,my_body,my_name)
+pygadgetic.dump_ic(my_header,my_body,my_name)
