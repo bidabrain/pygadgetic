@@ -3,6 +3,8 @@
 import numpy as np
 from pygadgetic import *
 
+
+
 ##define number of particles
 npart=[1,2,0,0,0,0]
 total_number_of_particles=np.sum(npart) #total number of particles
